@@ -1,6 +1,6 @@
 class AwsSdkGrailsPlugin {
 
-    def version = "1.11.11"
+    def version = "1.11.117"
     def grailsVersion = "2.0 > *"
     //def loadAfter = ['services', 'controllers']
 
@@ -8,7 +8,7 @@ class AwsSdkGrailsPlugin {
     def author = "Benoit Hediard"
     def authorEmail = "ben@benorama.com"
     def description = '''The AWS SDK Plugin allows your Grails application to use the Amazon Web Services infrastructure services.
-It provides simple wrapper service around the official AWS SDK for Java.
+It provides simple wrapper service around the official AWS SDK for Java. Forked by VidMob to upgrade to the lastest AWS Java SDK.
 
 Using the SDK, developers can build solutions for Amazon Simple Storage Service (Amazon S3), Amazon Elastic Compute Cloud (Amazon EC2), Amazon SimpleDB, and more.
 '''
