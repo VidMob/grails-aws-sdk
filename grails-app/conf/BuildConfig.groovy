@@ -1,5 +1,6 @@
 grails.project.work.dir = 'target/work'
 
+grails.project.repos.default="vidmobinternal"
 grails.project.dependency.resolver = 'maven'
 grails.project.dependency.resolution = {
     inherits 'global'
@@ -16,6 +17,11 @@ grails.project.dependency.resolution = {
     dependencies {
         // Latest httpmime for Coveralls plugin
         build 'org.apache.httpcomponents:httpmime:4.5.2'
+        build ('org.kuali.maven.wagons:maven-s3-wagon:1.2.1') {
+            export = false
+            exclude 'slf4j-log4j12'
+        }
+        
         // AWS SDK lib
         compile 'com.amazonaws:aws-java-sdk:1.11.117'
     }
