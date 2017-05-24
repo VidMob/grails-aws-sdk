@@ -1,6 +1,5 @@
 grails.project.work.dir = 'target/work'
 
-grails.project.repos.default="vidmobinternal"
 grails.project.dependency.resolver = 'maven'
 grails.project.dependency.resolution = {
     inherits 'global'
